@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DompetKeluarga — Anggaran Rumah Tangga Keluarga Indonesia</title>
+<meta name="description" content="DompetKeluarga membantu keluarga Indonesia mengatur anggaran bulanan: catat pemasukan dan pengeluaran, pantau anggaran per kategori, kejar target tabungan, dan hitung dana darurat — semua tersimpan di perangkat Anda.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">Rp</span>
+      <span class="brand-text"><strong>DompetKeluarga</strong><small>Anggaran rumah tangga, rapi tiap bulan</small></span>
+    </a>
+    <nav class="mainnav" aria-label="Navigasi utama">
+      <a href="#/" data-nav="dashboard">Dashboard</a>
+      <a href="#/transaksi" data-nav="transaksi">Transaksi</a>
+      <a href="#/anggaran" data-nav="anggaran">Anggaran</a>
+      <a href="#/tabungan" data-nav="tabungan">Tabungan</a>
+      <a href="#/kalkulator" data-nav="kalkulator">Kalkulator</a>
+      <a href="#/laporan" data-nav="laporan">Laporan</a>
+      <a href="#/panduan" data-nav="panduan">Panduan</a>
+    </nav>
+    <div class="month-picker">
+      <label for="monthSelect">Bulan</label>
+      <select id="monthSelect" aria-label="Pilih bulan"></select>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="app" aria-live="polite"></main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p><strong>DompetKeluarga</strong> — dibuat untuk keluarga Indonesia yang ingin uangnya jelas arahnya.
+    Semua data contoh tersimpan di peramban Anda sendiri (localStorage) dan tidak dikirim ke mana pun.</p>
+    <p class="footer-links">
+      <a href="#/">Dashboard</a> · <a href="#/transaksi">Transaksi</a> · <a href="#/anggaran">Anggaran</a> ·
+      <a href="#/tabungan">Tabungan</a> · <a href="#/kalkulator">Kalkulator</a> · <a href="#/laporan">Laporan</a> ·
+      <a href="#/panduan">Panduan</a>
+    </p>
+    <p class="muted">Contoh keluarga: Keluarga Pratama, Jakarta — dua anak, penghasilan gabungan Rp14.000.000 per bulan.</p>
+  </div>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
